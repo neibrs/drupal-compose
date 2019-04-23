@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  drupal:
+    image: nibs/drocker
+    container_name: drocker
+    ports:
+      - 9104:80
+    volumns:
+      - ./web:/var/www/html
