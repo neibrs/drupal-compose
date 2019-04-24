@@ -1,9 +1,9 @@
 #!/bin/sh
 
-docker pull nibs/drupal
+docker pull neibrs/drupal
 
 docker rm -f drupal
-docker run -d --name drupal nibs/drupal
+docker run -d --name drupal neibrs/drupal
 if [ -d ./web.old ]; then
   sudo rm -rf ./web.old
 fi
