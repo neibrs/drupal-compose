@@ -2,9 +2,9 @@ version: '3'
 
 services:
   drupal:
-    image: nibs/drocker
-    container_name: drocker
+    image: nibs/drupal
+    container_name: drupal
     ports:
       - 9104:80
-    volumns:
+    volumes:
       - ./web:/var/www/html
