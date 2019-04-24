@@ -4,6 +4,8 @@ services:
   drupal:
     image: nibs/drupal
     container_name: drupal
+    environment:
+      XDEBUG_CONFIG: remote_host=docker.for.mac.host.internal
     ports:
       - 9104:80
     volumes:
