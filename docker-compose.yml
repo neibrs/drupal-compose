@@ -2,7 +2,7 @@ version: '3'
 
 services:
   drupal:
-    image: nibs/drupal
+    image: neibrs/drupal
     container_name: drupal
     environment:
       XDEBUG_CONFIG: remote_host=docker.for.mac.host.internal
