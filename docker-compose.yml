@@ -5,7 +5,8 @@ services:
     image: neibrs/drupal
     container_name: drupal
     environment:
-      XDEBUG_CONFIG: remote_host=docker.for.mac.host.internal
+#      XDEBUG_CONFIG: remote_host=docker.for.mac.host.internal
+      XDEBUG_CONFIG: remote_host=172.17.0.1
     ports:
       - 9104:80
     volumes:
